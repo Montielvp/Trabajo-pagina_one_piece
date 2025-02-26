@@ -1,0 +1,7 @@
+{
+  "name": "OnePieceApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

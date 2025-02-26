@@ -1,0 +1,26 @@
+.fondo {
+    --background: rgb(255, 255, 255); 
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+  }
+  
+  .imagen {
+    width: 100%;
+    max-height: 80vh; 
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+  
+  .boton {
+    width: 90%;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  

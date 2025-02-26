@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filtrarPersonajes()"></ion-searchbar>
+
+ 
+  <ion-list>
+    <ion-item *ngFor="let personaje of personajesFiltrados" (click)="verDetalles(personaje.id)">
+      <ion-thumbnail slot="start">
+        <img *ngIf="personaje.fruit?.filename; else noImage" [src]="personaje.fruit.filename" alt="Imagen de {{ personaje.name }}">
+        <ng-template #noImage>
+          <img src="assets/default.png" alt="Imagen no disponible">
+        </ng-template>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ personaje.name }}</h2>
+        <p>{{ personaje.job }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
