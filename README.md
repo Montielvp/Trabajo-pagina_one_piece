@@ -22,4 +22,8 @@ Clonar el repositorio
 git clone https://github.com/Montielvp/Trabajo-pagina_one_piece.git
 cd Trabajo-pagina_one_piece
 
+Instalar dependencias
+npm install
 
+Ejecutar la aplicación
+ionic serve
